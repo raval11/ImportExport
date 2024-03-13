@@ -1,0 +1,34 @@
+@media only screen and (max-width: 768px) {
+  .list.hidden {
+    display: none;
+  }
+  .list.hidden.md\\:block {
+    display: block;
+  }
+}
+
+.dd{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linking{
+  position: relative;
+  font-size: 20px;
+}
+
+.linking::before{
+  content: "";
+  position: absolute;
+  width: 0px;
+  top: 23px;
+  height: 3px;
+ 
+ 
+}
+
+.linking:hover::before{
+  width: 100%;
+  background-color: rgb(17 24 39);
+  transition: 0.8s;
+}
